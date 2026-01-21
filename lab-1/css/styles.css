@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 
 body {
-    line-height: 1.4;
+    line-height: 1.2;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
 }
 main {
     column-count: 3;
