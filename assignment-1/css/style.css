@@ -1,0 +1,105 @@
+/* ================= HEADER ================= */
+header {
+    padding-bottom: 50px;
+}
+header nav {
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+header ul {
+    list-style-type: none;
+}
+header a:link {
+    text-decoration: none;
+    color: black;
+}
+header a:hover {
+    color: grey;
+}
+header div {
+    text-align: right;
+}
+header h1 {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+header h2 {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+header h3 {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 20px;
+}
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ================= MAIN ================= */
+
+main h3 {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+main p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+
+/* ================= ASIDE ================= */
+
+section {
+    text-align: justify;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.4;
+    padding-left: 30px;
+}
+
+
+/* ================= SECTION ================= */
+
+aside {
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.4;
+    padding-left: 1000px;
+}
+aside h3 {
+    padding-left: 40px;
+}
+aside div {
+    padding-left: 220px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+}
+footer ul {
+    list-style-type: none;
+}
+footer li {
+    display: inline;
+}
+footer a:link {
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+    color: grey;
+}
