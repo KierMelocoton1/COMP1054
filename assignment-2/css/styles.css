@@ -1,0 +1,33 @@
+/* =========== HEADER =========== */
+
+header {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+header > h1 {
+    float: left;
+}
+
+header > p {
+    font-size: 20px;
+}
+
+
+/* =========== IMAGES =========== */
+
+img[alt="Dog and owner"] {
+    width: 15%;
+    float: right;
+}
+
+img[alt="Snow tubing"] {
+    width: 30%;
+}
+
+
+/* References Used:
+
+https://youtu.be/l1mER1bV0N0 
+https://www.w3schools.com/cssref/css_selectors.php
+*/
