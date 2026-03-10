@@ -5,11 +5,18 @@ header {
 }
 
 header > h1 {
-    float: left;
+    /* float: left; */
+    text-transform: lowercase;
+}
+
+header > h1 em {
+    color: red;
+    font-style: normal;
 }
 
 header > p {
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 
@@ -19,6 +26,7 @@ body {
     padding-left: 5em;
     padding-right: 5em;
     padding-bottom: 1em;
+    text-align: justify;
 }
 
 #container {
@@ -26,27 +34,44 @@ body {
 }
 
 /* =========== MAIN =========== */
-article {
-    float: right;
+main > article:nth-of-type(1) > h2 {
+    /* float: right; */
+    color: red;
 }
-
-/* aside > p {
-    float: left;
-} */
-
-/* =========== UL =========== */
-ul {
-    list-style-type: "+ ";
-}
-
-/* li:before {
-    content: "+";
-} */
-
-a:link {
+main > article:nth-of-type(2) > h2 {
     color: black;
-    text-decoration: none;
-    font-weight: bold;
+}
+article > p {
+    /* float: right; */
+    width: 550px;
+    /* color: greenyellow; */
+}
+
+aside {
+    padding-left: 2em;
+}
+
+aside:nth-of-type(1) > p {
+    /* color: blue; */
+    width: 120px;
+}
+
+aside:nth-of-type(2) > p {
+    color: blue;
+    width: 240px
+}
+
+aside > h2 {
+    color: red;
+}
+
+aside > h2::before {
+    content: "+ ";
+    color: black;
+}
+
+[title="Sir Sams"] {
+    color: black;
 }
 
 
@@ -54,14 +79,45 @@ a:link {
 img[alt="Dog and owner"] {
     width: 15%;
     float: right;
+    padding-right: 2em;
 }
-
 
 img[alt="Snow tubing"] {
     width: 30%;
     float: right;
+    padding-right: 2em;
+} 
+
+
+/* =========== FOOTER =========== */
+
+footer > p {
+    text-transform: lowercase;
 }
 
+[title="Canadian Automotive Association"] {
+    font-weight: bold;
+}
+
+/* =========== UNIVERSAL SELECTORS =========== */
+mark {
+    background-color: lightgrey;
+}
+
+ul {
+    list-style-type: "+ ";
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
 
 
 /* References Used:
@@ -70,5 +126,4 @@ https://youtu.be/l1mER1bV0N0
 https://www.w3schools.com/cssref/css_selectors.php
 https://developer.mozilla.org/en-US/docs/Web/CSS/
 Guides/Flexible_box_layout/Ordering_items
-https://htmlcheatsheet.com/css/
-*/
+https://htmlcheatsheet.com/css/ */
