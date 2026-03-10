@@ -1,5 +1,4 @@
 /* =========== HEADER =========== */
-
 header {
     display: flex;
     flex-direction: column-reverse;
@@ -14,20 +13,62 @@ header > p {
 }
 
 
-/* =========== IMAGES =========== */
+/* =========== BODY =========== */
+body {
+    padding-top: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 1em;
+}
 
+#container {
+    border: 1.3px solid #000000;
+}
+
+/* =========== MAIN =========== */
+article {
+    float: right;
+}
+
+/* aside > p {
+    float: left;
+} */
+
+/* =========== UL =========== */
+ul {
+    list-style-type: "+ ";
+}
+
+/* li:before {
+    content: "+";
+} */
+
+a:link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =========== IMAGES =========== */
 img[alt="Dog and owner"] {
     width: 15%;
     float: right;
 }
 
+
 img[alt="Snow tubing"] {
     width: 30%;
+    float: right;
 }
+
 
 
 /* References Used:
 
 https://youtu.be/l1mER1bV0N0 
 https://www.w3schools.com/cssref/css_selectors.php
+https://developer.mozilla.org/en-US/docs/Web/CSS/
+Guides/Flexible_box_layout/Ordering_items
+https://htmlcheatsheet.com/css/
 */
