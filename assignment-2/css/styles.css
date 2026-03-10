@@ -3,30 +3,26 @@
 =========== HEADER ===========
 ==============================
 */
-header {
-    /* display: flex;
-    flex-direction: column-reverse;
-    width: 30%; */
-    /* border: 2px solid; */
-}
 
-header > h1 { /* homebase */
-    /* float: left; */
-    text-transform: lowercase;
+/*<=== homebase ===>*/
+header > h1 { 
     font-size: 80px;
+    text-transform: lowercase;
     margin: 0px;
     width: 95%;
     /* border: 2px solid; */
 }
 
-header > h1 em { /* Red half of homebase */
+/* <=== Red half of homebase ===> */
+header > h1 em { 
     color: red;
     font-style: normal;
 }
 
-header > p { /* South Central Ontario */
-    text-transform: uppercase;
+/* <=== South Central Ontario ===> */
+header > p { 
     font-size: 15px;
+    text-transform: uppercase;
     width: 60%;
     position: absolute;
     top: 55px;
@@ -40,15 +36,16 @@ header > p { /* South Central Ontario */
 ==============================
 */
 
+/* <=== Outside spacing ===> */
 body {
     padding-top: 5em;
     padding-left: 5em;
     padding-right: 5em;
     padding-bottom: 5em;
-    /* text-align: justify; */
     /* border: 2px solid; */
 }
 
+/* <=== Border ===> */
 #container {
     border: 1.3px solid #000000;
 }
@@ -60,11 +57,11 @@ body {
 ==============================
 */
 
-main > article:nth-of-type(1) > h2 { /* A Dog Day Afternoon */
-    /* float: right; */
-    margin: 0;
+/* <=== A Dog Day Afternoon (h2) ===> */
+main > article:nth-of-type(1) > h2 { 
     color: red;
     font-size: 30px;
+    margin: 0;    
     width: 30%;
     position: relative;
     left: 480px;
@@ -72,31 +69,33 @@ main > article:nth-of-type(1) > h2 { /* A Dog Day Afternoon */
 }
 
 main > article:nth-of-type(1) {
+    font-size: 13px;
     text-align: justify;
     line-height: 1.4;
-    font-size: 13px;
-    /* border: 3px solid; */
-}
-
-main > article:nth-of-type(2) {
-    text-align: justify;
-    line-height: 1.4;
-    font-size: 13px;
-    /* border: 3px solid; */
-}
-
-main > aside:nth-of-type(2) {
-    text-align: justify;
-    line-height: 1.4;
-    font-size: 13px;
-    width:23%;
     /* border: 2px solid; */
 }
 
-main > article:nth-of-type(2) > h2 { /* On The Slopes */ 
-    margin: 0%;
+main > article:nth-of-type(2) {
+    font-size: 13px;
+    text-align: justify;
+    line-height: 1.4;
+    /* border: 2px solid; */
+}
+
+/* <=== Gray box (lower left hand corner) */
+main > aside:nth-of-type(2) {
+    font-size: 13px;
+    text-align: justify;
+    line-height: 1.4;
+    width:23%;
+    border: 2px solid;
+}
+
+/* <=== On The Slopes (h2) ===> */ 
+main > article:nth-of-type(2) > h2 { 
     color: black;
     font-size: 40px;
+    margin: 0%;
     width: 25%;
     position: relative;
     top: 400px;
@@ -121,57 +120,57 @@ main > article > p {
     position: relative;
     left: 480px;
     top: 400px;
-    /* border: 2px solid; */
+    border: 2px solid;
  }
 
 aside {
-    padding-left: 2em;
     width: 17%;
-    /* border: 3px solid; */
+    padding-left: 2em;
+    border: 3px solid;
 }
 
 aside:nth-of-type(1) > p {
-    width: 150px;
     line-height: 1.6;
+    width: 150px;
     position: absolute;
     top: 270px;
     /* border: 2px solid; */
 }
 
 aside:nth-of-type(1) > p:nth-of-type(1) {
-    width: 150px;
     line-height: 1.6;
+    width: 150px;  
     position: absolute;
     top: 250px;
     /* border: 2px solid; */
 }
 
 aside:nth-of-type(1) > p:nth-of-type(2) {
-    width: 150px;
     line-height: 1.6;
+    width: 150px; 
     position: absolute;
     top: 540px;
     /* border: 2px solid; */
 }
 
 aside:nth-of-type(2) > p {
-    margin: 0;
-    width: 200px;
-    line-height: 1.4;
     font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+    width: 200px; 
     /* border: 2px solid; */
 }
 
 aside > h2 {
-    margin: 0;
     color: red;
+    margin: 0;
     width: 80%;
     /* border: 2px solid; */
 }
 
 aside > h2::before {
-    content: "+ ";
     color: black;
+    content: "+ "; 
     /* border: 2px solid; */
 }
 
@@ -191,6 +190,7 @@ ul > li > h3 {
 ==============================
 */
 
+/* <=== Dog picture ===> */
 img[alt="Dog and owner"] {
     width: 15%;
     position: absolute;
@@ -200,7 +200,7 @@ img[alt="Dog and owner"] {
     /* padding-right: 2em; */
     /* border: 2px solid; */
 }
-
+/* <=== Sledding picture ===> */
 img[alt="Snow tubing"] {
     width: 30%;
     position: absolute;
@@ -217,8 +217,8 @@ img[alt="Snow tubing"] {
 ==============================
 */
 footer > p {
-    text-transform: lowercase;
     font-size: 14px;
+    text-transform: lowercase;
     width: 10%;
     position: absolute;
     /* border: 2px solid; */
@@ -240,8 +240,8 @@ mark {
 }
 
 ul {
-    list-style-type: "+ ";
     font-size: 13px;
+    list-style-type: "+ ";
     padding-inline-start: 10px;
     /* border: 2px solid; */
 }
@@ -252,8 +252,8 @@ li:nth-of-type(3) {
 
 a:link {
     color: black;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;  
 }
 
 em {
