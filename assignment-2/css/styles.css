@@ -1,50 +1,105 @@
-/* =========== HEADER =========== */
+/* 
+==============================
+=========== HEADER ===========
+==============================
+*/
 header {
     display: flex;
     flex-direction: column-reverse;
 }
 
-header > h1 {
+header > h1 { /* homebase */
     /* float: left; */
     text-transform: lowercase;
+    font-size: 70px;
+    margin: 0px;
+    width: 30%;
+    border: 2px solid;
 }
 
-header > h1 em {
+header > h1 em { /* Red half of homebase */
     color: red;
     font-style: normal;
 }
 
-header > p {
+header > p { /* South Central Ontario */
     font-size: 20px;
     text-transform: uppercase;
+    font-size: 15px;
+    width: 20%;
+    border: 2px solid;
 }
 
 
-/* =========== BODY =========== */
+/* 
+==============================
+=========== BODY =============
+==============================
+*/
+
 body {
     padding-top: 1em;
     padding-left: 5em;
     padding-right: 5em;
     padding-bottom: 1em;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 #container {
     border: 1.3px solid #000000;
 }
 
-/* =========== MAIN =========== */
+
+/* 
+==============================
+=========== MAIN =============
+==============================
+*/
+
 main > article:nth-of-type(1) > h2 {
     /* float: right; */
+    margin: 0;
     color: red;
+    font-size: 30px;
+    width: 30%;
+    border: 2px solid;
 }
+
+main > article:nth-of-type(1) {
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 13px;
+}
+
+main > article:nth-of-type(2) {
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 13px;
+}
+
+main > aside:nth-of-type(2) {
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 13px;
+    width:23%;
+    border: 2px solid;
+}
+
 main > article:nth-of-type(2) > h2 {
+    margin: 0%;
     color: black;
+    font-size: 40px;
+    width: 25%;
+    border: 2px solid;
+
 }
+
 article > p {
-    /* float: right; */
+    margin: 0;
     width: 550px;
     /* color: greenyellow; */
+    /* float: right; */
+    border: 2px solid;
 }
 
 aside {
@@ -52,16 +107,22 @@ aside {
 }
 
 aside:nth-of-type(1) > p {
-    /* color: blue; */
-    width: 120px;
+    width: 150px;
+    line-height: 1.6;
+    border: 2px solid;
+    color: blue;
 }
 
 aside:nth-of-type(2) > p {
-    color: blue;
-    width: 240px
+    margin: 0;
+    /* color: blue; */
+    width: 200px;
+    line-height: 1.4;
+    font-size: 13px;
 }
 
 aside > h2 {
+    margin: 0;
     color: red;
 }
 
@@ -74,8 +135,17 @@ aside > h2::before {
     color: black;
 }
 
+ul > li > h3 {
+    margin: 0;
+}
 
-/* =========== IMAGES =========== */
+
+/* 
+==============================
+=========== IMAGES ===========
+==============================
+*/
+
 img[alt="Dog and owner"] {
     width: 15%;
     float: right;
@@ -89,23 +159,42 @@ img[alt="Snow tubing"] {
 } 
 
 
-/* =========== FOOTER =========== */
+/* 
+==============================
+=========== FOOTER ===========
+==============================
+*/
 
 footer > p {
     text-transform: lowercase;
+    font-size: 14px;
+    width: 10%;
+    border: 2px solid;
 }
 
 [title="Canadian Automotive Association"] {
     font-weight: bold;
+    text-transform: uppercase;
 }
 
-/* =========== UNIVERSAL SELECTORS =========== */
+/* 
+=========================================
+=========== Universal Selectors =========
+=========================================
+*/
+
 mark {
     background-color: lightgrey;
 }
 
 ul {
     list-style-type: "+ ";
+    font-size: 13px;
+    padding-inline-start: 10px;
+}
+
+li:nth-of-type(3) {
+    width: 130px;
 }
 
 a:link {
