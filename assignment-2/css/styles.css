@@ -4,17 +4,19 @@
 ==============================
 */
 header {
-    display: flex;
+    /* display: flex;
     flex-direction: column-reverse;
+    width: 30%; */
+    /* border: 2px solid; */
 }
 
 header > h1 { /* homebase */
     /* float: left; */
     text-transform: lowercase;
-    font-size: 70px;
+    font-size: 80px;
     margin: 0px;
-    width: 30%;
-    border: 2px solid;
+    width: 95%;
+    /* border: 2px solid; */
 }
 
 header > h1 em { /* Red half of homebase */
@@ -23,11 +25,12 @@ header > h1 em { /* Red half of homebase */
 }
 
 header > p { /* South Central Ontario */
-    font-size: 20px;
     text-transform: uppercase;
     font-size: 15px;
-    width: 20%;
-    border: 2px solid;
+    width: 60%;
+    position: absolute;
+    top: 55px;
+    /* border: 2px solid; */
 }
 
 
@@ -38,11 +41,12 @@ header > p { /* South Central Ontario */
 */
 
 body {
-    padding-top: 1em;
+    padding-top: 5em;
     padding-left: 5em;
     padding-right: 5em;
-    padding-bottom: 1em;
+    padding-bottom: 5em;
     /* text-align: justify; */
+    /* border: 2px solid; */
 }
 
 #container {
@@ -56,25 +60,29 @@ body {
 ==============================
 */
 
-main > article:nth-of-type(1) > h2 {
+main > article:nth-of-type(1) > h2 { /* A Dog Day Afternoon */
     /* float: right; */
     margin: 0;
     color: red;
     font-size: 30px;
     width: 30%;
-    border: 2px solid;
+    position: relative;
+    left: 480px;
+    /* border: 2px solid; */
 }
 
 main > article:nth-of-type(1) {
     text-align: justify;
     line-height: 1.4;
     font-size: 13px;
+    /* border: 3px solid; */
 }
 
 main > article:nth-of-type(2) {
     text-align: justify;
     line-height: 1.4;
     font-size: 13px;
+    /* border: 3px solid; */
 }
 
 main > aside:nth-of-type(2) {
@@ -82,53 +90,89 @@ main > aside:nth-of-type(2) {
     line-height: 1.4;
     font-size: 13px;
     width:23%;
-    border: 2px solid;
+    /* border: 2px solid; */
 }
 
-main > article:nth-of-type(2) > h2 {
+main > article:nth-of-type(2) > h2 { /* On The Slopes */ 
     margin: 0%;
     color: black;
     font-size: 40px;
     width: 25%;
-    border: 2px solid;
-
+    position: relative;
+    top: 400px;
+    left: 500px;
+    /* border: 2px solid; */
 }
 
-article > p {
+main > article > p {
     margin: 0;
     width: 550px;
-    /* color: greenyellow; */
     /* float: right; */
-    border: 2px solid;
+    /* border: 2px solid; */
 }
+
+ main > article:nth-of-type(1) > p {
+    position: relative;
+    left: 480px;
+    /* border: 2px solid; */
+ }
+
+  main > article:nth-of-type(2) > p {
+    position: relative;
+    left: 480px;
+    top: 400px;
+    /* border: 2px solid; */
+ }
 
 aside {
     padding-left: 2em;
+    width: 17%;
+    /* border: 3px solid; */
 }
 
 aside:nth-of-type(1) > p {
     width: 150px;
     line-height: 1.6;
-    border: 2px solid;
-    color: blue;
+    position: absolute;
+    top: 270px;
+    /* border: 2px solid; */
+}
+
+aside:nth-of-type(1) > p:nth-of-type(1) {
+    width: 150px;
+    line-height: 1.6;
+    position: absolute;
+    top: 250px;
+    /* border: 2px solid; */
+}
+
+aside:nth-of-type(1) > p:nth-of-type(2) {
+    width: 150px;
+    line-height: 1.6;
+    position: absolute;
+    top: 540px;
+    /* border: 2px solid; */
 }
 
 aside:nth-of-type(2) > p {
     margin: 0;
-    /* color: blue; */
     width: 200px;
     line-height: 1.4;
     font-size: 13px;
+    /* border: 2px solid; */
 }
 
 aside > h2 {
     margin: 0;
     color: red;
+    width: 80%;
+    /* border: 2px solid; */
 }
 
 aside > h2::before {
     content: "+ ";
     color: black;
+    /* border: 2px solid; */
 }
 
 [title="Sir Sams"] {
@@ -137,6 +181,7 @@ aside > h2::before {
 
 ul > li > h3 {
     margin: 0;
+    /* border: 2px solid; */
 }
 
 
@@ -148,14 +193,21 @@ ul > li > h3 {
 
 img[alt="Dog and owner"] {
     width: 15%;
-    float: right;
-    padding-right: 2em;
+    position: absolute;
+    top: 90px;
+    right: 140px;
+    /* float: right; */
+    /* padding-right: 2em; */
+    /* border: 2px solid; */
 }
 
 img[alt="Snow tubing"] {
     width: 30%;
-    float: right;
-    padding-right: 2em;
+    position: absolute;
+    left: 650px;
+    top: 500px;
+    /* padding-right: 2em; */
+    /* border: 2px solid; */
 } 
 
 
@@ -164,12 +216,12 @@ img[alt="Snow tubing"] {
 =========== FOOTER ===========
 ==============================
 */
-
 footer > p {
     text-transform: lowercase;
     font-size: 14px;
     width: 10%;
-    border: 2px solid;
+    position: absolute;
+    /* border: 2px solid; */
 }
 
 [title="Canadian Automotive Association"] {
@@ -191,6 +243,7 @@ ul {
     list-style-type: "+ ";
     font-size: 13px;
     padding-inline-start: 10px;
+    /* border: 2px solid; */
 }
 
 li:nth-of-type(3) {
