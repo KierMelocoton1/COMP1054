@@ -1,5 +1,6 @@
-// STEP 6: Nab all the SUMMARY elements
-
+// STEP 6: Nab all the DETAILS elements
+const details = document.querySelectorAll("details");
+document.getElementsByTagName("a");
 
 // STEP 7: Loop through the element array to add an event listener, and reference a function called closeOpenDetails
 
