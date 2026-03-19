@@ -5,10 +5,6 @@
 :root {
 	interpolate-size: allow-keywords;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 5272845cd134eb175712c553850464d044e333f4
 html {
 	box-sizing: border-box;
 }
@@ -32,7 +28,6 @@ details {
 }
 
 /* Animate open and close of panel */
-<<<<<<< HEAD
 details div {
 	transition: height 1s ease;
 	overflow: hidden;
@@ -40,45 +35,21 @@ details div {
 
 details:not([open]) div {
 	height: 0;
-=======
-/* Thanks to the great article at https://css-tricks.com/using-styling-the-details-element/ */
-::details-content {
-  transition: 
-  	height 0.25s ease,
-	content-visibility 0.25s ease allow-discrete;
-  height: 0;
-  overflow: clip;
-}
-
-/* Browser supports interpolate-size */
-@supports (interpolate-size: allow-keywords) {
-  :root {
-    interpolate-size: allow-keywords;
-  }
-
-  [open]::details-content {
-    height: auto;
-  }
->>>>>>> 5272845cd134eb175712c553850464d044e333f4
 }
 
 /* STEP 3b: Adjacent sibling DETAILS elements don't need a top border */
 details + details {
 	border-top: none;
 }
-<<<<<<< HEAD
 
 details[open] div {
 	height: auto;
 }
 
-=======
->>>>>>> 5272845cd134eb175712c553850464d044e333f4
 /* STEP 3c: Brighten up the currently open DETAILS panel (the browser adds the "open" attribute to the active element) */
 details[open] {
 	background-color: white;
 }
-<<<<<<< HEAD
 
 /* STEP 4: Make the SUMMARY look a bit like a heading, and address affordance by turning the mouse cursor into a pointer to encourage user interaction */
 summary {
@@ -93,24 +64,10 @@ summary::marker {
 	content: "none";
 }
 
-=======
-/* STEP 4: Make the SUMMARY look a bit like a heading, and address affordance by turning the mouse cursor into a pointer to encourage user interaction */
-summary {
-	font-size: 1.25rem;
-	font-weight: bold;
-	padding: 1rem 0;
-	cursor: pointer;
-}
-/* STEP 5a: Disable the default triangle toggle - it is fine, but we should learn how to customize this part of the widget */
-summary::marker {
-	content: none;
-}
->>>>>>> 5272845cd134eb175712c553850464d044e333f4
 /* STEP 5b: Use the ::after pseudoelement with the SECTION to add a "+" character imploring user to "open" the panel */
 summary::after {
 	content: "+";
 	float: right;
-<<<<<<< HEAD
 }
 
 /* STEP 5c: If the panel is open, then change it to a "-" character to allow user to close it again - proceed to accordion.js for the next step */
@@ -119,20 +76,6 @@ details[open] summary::after {
 }
 
 /* STEP 10: Add rounded corners to the first and last DETAILS elements */
-=======
-	font-size: 2rem;
-	position: relative;
-	top: -0.5rem;
-}
-/* STEP 5c: If the panel is open, then change it to a "-" character to allow user to close it again - proceed to accordion.js for the next step */
-details[open] summary::after {
-	content: "–";
-}
-/* STEP 10: Add rounded corners to the first and last DETAILS elements */
-details:first-of-type {
-	border-radius: 1rem 1rem 0 0;
-}
->>>>>>> 5272845cd134eb175712c553850464d044e333f4
 details:last-of-type {
 	border-radius: 0 0 1rem 1rem;
 }
